@@ -9,7 +9,7 @@ if [[ ! "$SHELLOPTS" =~ "allexport" ]]; then
   set -a # we export every declared function using this flag
 fi
 
-ores_simple_push(){(
+ores_simple_push()(
 
   set -eo pipefail;
   git add .
@@ -25,7 +25,7 @@ ores_simple_push(){(
   git commit -am "${args}" || { echo; }
   git push
 
-)}
+)
 
 
 if [[ "$all_cm_export" == "nope" ]]; then
