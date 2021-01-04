@@ -22,7 +22,7 @@ ores_simple_push()(
   fi
 
 
-  git commit -am "${args}" || { echo; }
+  git commit -am "${args[*]}" || { echo; }
   git push
 
 )
