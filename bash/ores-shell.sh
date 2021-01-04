@@ -21,7 +21,6 @@ ores_simple_push()(
       args+=('squash-this-commit')
   fi
 
-
   git commit -am "${args[*]}" || { echo; }
   git push
 
