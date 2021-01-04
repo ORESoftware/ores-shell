@@ -1,0 +1,20 @@
+.idea
+*.log
+
+### ts/node
+node_modules
+ts/dist/*
+!ts/dist/readme.md
+
+### golang
+go/pkg/*
+go/bin/*
+go/src/*
+
+!go/bin/readme.md
+!go/pkg/readme.md
+!go/src/readme.md
+
+!go/src/github.com/memebank
+!go/src/github.com/oresoftware
+!go/src/me
