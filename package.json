@@ -1,6 +1,14 @@
 {
   "name": "@oresoftware/ores-shell",
   "private": true,
+  "scripts": {
+    "validate:lifecycle": "node scripts/validate-lifecycle.mjs"
+  },
+  "oresLifecycle": {
+    "status": "legacy",
+    "authority": false,
+    "mutableDependenciesAllowed": false
+  },
   "dependencies": {
     "rxjs": "^6.6.3"
   },
