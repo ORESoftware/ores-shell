@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "repository": "ORESoftware/ores-shell",
+  "package": "@oresoftware/ores-shell",
+  "status": "legacy",
+  "authority": false,
+  "mutable_dependencies_allowed": false,
+  "compatibility_policy": {
+    "existing_immutable_pins": "allowed",
+    "new_branch_or_moving_tag_references": "forbidden",
+    "compatibility_fixes": "security_or_reproducibility_only",
+    "new_features": "forbidden"
+  },
+  "successor_boundary": {
+    "fleet_governance_and_cli": "ORESoftware/ores-cli",
+    "shared_ci_automation": "ORESoftware/ores-gha-workflows",
+    "provider_or_environment_specific_automation": "the owning product *-infra repository",
+    "drop_in_successor": null
+  },
+  "consumer_inventory": {
+    "active_oresoftware_consumers": [],
+    "inventory_date": "2026-09-14",
+    "evidence": "GitHub code search for ores-shell found no active ORESoftware dependency reference outside this repository and organization metadata."
+  },
+  "retirement_criteria": [
+    "No active mutable fleet dependency references this repository.",
+    "No compatibility fix has been required for 180 days.",
+    "Useful automation has an explicit owner in ores-cli, ores-gha-workflows, or a product *-infra repository.",
+    "Historical tags and commits remain preserved."
+  ],
+  "policy_version": 1
+}
